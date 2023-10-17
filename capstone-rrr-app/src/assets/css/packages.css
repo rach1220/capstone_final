@@ -1,0 +1,69 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Poppins&family=Roboto+Condensed:wght@300&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust the height as needed to center vertically */
+  }
+  .h2-grooming{
+    text-align: center;
+  }
+  .package-card {
+    background-color: #ffffff;
+    border: 5px solid #665931;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 500px ;
+  }
+  
+  .package-card-body {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    color: #000000;
+  }
+  
+  .total-amount {
+    padding-top: 40px;
+    color: #665931;
+    margin-top: 10px;
+  }
+  
+  /* Center the header text */
+  h2, h3 {
+    text-align: left;
+  }
+
+  
+  /* Ensure the table is responsive on small screens */
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+    }
+    th, td {
+      display: block;
+      width: 100%;
+    }
+    th {
+      text-align: center;
+    }
+    .total-amount {
+      height: 200px;
+    }
+  }
+  input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(1.2);
+  }
+  @media (max-width: 425px) {
+    .package-card {
+      width: 400px;
+    }
+    .total-amount {
+      height: fit-content;
+    }
+}
